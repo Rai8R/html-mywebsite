@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+.container {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: rgb(30, 9, 48);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+
+/*header*/
+
+header {
+    width: 100%;
+    height: 700px;
+    background-image: url('./imagenes/backgr.gif');
+    background-size: cover;
+    background-attachment:fixed;
+    position:relative;
+}
+
+.logo {
+    height: 50px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+nav {
+    text-align: right;
+    padding: 0px 0px 0px;
+}
+nav > a {
+    color: black;
+    font-weight: 800;
+    text-decoration: none;
+    margin-right: 20px;
+
+
+}
+
+nav > a:hover {
+    text-decoration:underline;
+
+
+}
+
+header .text-header {
+    display: flex;
+    height: 430px;
+    width: 50%;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.text-header h1 {
+    color: white;
+    font-size: 50px;
+}
+.text-header h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.wave {
+    position:absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* about */
+.imagen-aboutme {
+    border-radius: 20%;
+}
+
+.container-aboutme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-about {
+    width: 48%;
+    height: 500px;
+    justify-content:  center;
+    align-content: center;
+    background: #ea5974a2;
+    padding: 50px;
+}
+.text-about h3 {
+    text-align: center;
+    color: white;
+}
+.text-about p {
+    text-align: justify;
+    font-weight: 500;
+    color: white;
+}
+ 
+
+/* portafolio  */
+
+.portfolio {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    justify-items: center;
+    height: 800px;
+}
+
+.galeria {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    align-content: center;
+    text-align: center;
+}
+
+
+.galeria .imagen {
+    display:inline-block;
+    width: 28%;
+    margin: 10px 20px;
+    position: relative;
+}
+
+.galeria img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.galeria .imagen .overlay {
+    position: absolute;
+    background-color: #5e0329b8;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    transition: 1s all ease;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.galeria .imagen .overlay p {
+    font-weight: normal;
+    color: white;
+    margin-top: 30%;
+    line-height: 22px;
+    text-align: center;
+}
+
+.galeria .imagen:hover .overlay {
+    opacity: 1;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: #5e0329b8;
+    padding: 60px 0 30 0;
+    margin: auto;
+    overflow: hidden;
+}
+.contenteiner-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.content-foo {
+text-align: center;
+}
+
+.content-foo > h3{
+    color: white;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.titulo-final {
+    text-align: left;
+    font-size: 15px;
+    margin-left: 15px;
+    color: black;
+}
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+    }
+
+    .redes a {
+        color: white;
+        font-size: 30px;
+        padding: 30px;
+    }
+
+
+    @media (max-width: 600px) {
+        .body{
+            margin-bottom: 30px;
+        }
+        .header {
+            background-position: center;
+            background-size: contain;
+
+            
+        }
+        .text-header {
+            text-align: center;
+            padding-left: 50%;
+        }
+        
+        .container-aboutme {
+            flex-direction:column-reverse;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+        }
+        .text-about {
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+        .imagen-aboutme {
+            width: 50%;
+            flex-direction: column;
+            height: auto;
+            padding-top: 10px;
+        }
+
+        .galeria .imagen {
+            width: 40%;
+        }
+        .galeria .imagen .overlay p  {
+            font-size: 12px;
+        }
+
+
+.container-footer {
+    justify-content: center;
+    width: 100%;
+
+}
+    }
+
